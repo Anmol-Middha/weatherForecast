@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Google Maps
+        </title>
+        <style>
+            html,body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<button onclick="getLocation()">Show location</button>-->
+        <div id="map_box" style="height:100%;">
+
+        </div>
+        <!--<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map_box'), {
+          center: {lat: 21.7679, lng: 78.8718},
+          zoom: 8,
+        });
+      }
+    </script>-->
+    <!--<script>
+//var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        //console.log(showPosition);
+    } else { 
+        //x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude=","+position.coords.longitude; 
+    console.log(position);
+    console.log(position.coords.latitude);
+    console.log(position.coords.longitude);
+    return {lat:position.coords.latitude, lng:position.coords.longitude};
+    // x.innerHTML = "Latitude: " + position.coords.latitude + 
+    // "<br>Longitude: " + position.coords.longitude;
+}
+</script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsO6AfZM1T0heyjRVEuh8_w1wF20LlzCw&callback=initMap" async defer></script>
+    <script src="../js/app/weather.js" async></script>
+    </body>
+</html>
