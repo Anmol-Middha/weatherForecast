@@ -256,6 +256,9 @@ var map,pos;
         // console.log(x);
         //console.log(showPosition);
   }
+  else{
+    console.log("not possible");
+  }
     // console.log(pos);
    
 }
